@@ -5,21 +5,71 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StackOverflow.Database", "StackOverflow.Database\StackOverflow.Database.sqlproj", "{1A43348E-36AE-4130-BDDA-57C4429938C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Database", "01. Database", "{71C33AB8-A71A-48CD-9697-446C54896230}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Integration Package", "02. Integration Package", "{797B1245-0E74-435F-AEC6-3EBA753E734E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Data Warehouse", "03. Data Warehouse", "{6463F1BF-66E1-48FC-BDC1-30AB0BE86A5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Analysis Services", "04. Analysis Services", "{FAFD6D21-D81A-4343-A23C-E58F0949C768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. PowerBI Reports", "05. PowerBI Reports", "{73E4A1CD-D3D4-4D13-99F6-6315AB446EC2}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "StackOverflow.Integrations", "StackOverflow.Integrations\StackOverflow.Integrations.dtproj", "{409E95DF-1868-46EA-A3FD-DE364E43C05D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StackOverflow.DataWarehouse", "StackOverflow.DataWarehouse\StackOverflow.DataWarehouse.sqlproj", "{3FEE8A31-4E37-4DE3-8262-33589A8A4154}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "StackOverflow.AnalysisServices", "StackOverflow.AnalysisServices\StackOverflow.AnalysisServices.dwproj", "{11AB9806-9AB8-4DB4-A449-97430F026402}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Development|Any CPU.Deploy.0 = Debug|Any CPU
 		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A43348E-36AE-4130-BDDA-57C4429938C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D}.Debug|Any CPU.ActiveCfg = Development
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D}.Debug|Any CPU.Build.0 = Development
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D}.Development|Any CPU.ActiveCfg = Development
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D}.Development|Any CPU.Build.0 = Development
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D}.Release|Any CPU.ActiveCfg = Development
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D}.Release|Any CPU.Build.0 = Development
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Debug|Any CPU.ActiveCfg = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Debug|Any CPU.Build.0 = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Debug|Any CPU.Deploy.0 = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Development|Any CPU.ActiveCfg = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Development|Any CPU.Build.0 = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Development|Any CPU.Deploy.0 = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Release|Any CPU.ActiveCfg = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Release|Any CPU.Build.0 = Development
+		{11AB9806-9AB8-4DB4-A449-97430F026402}.Release|Any CPU.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A43348E-36AE-4130-BDDA-57C4429938C0} = {71C33AB8-A71A-48CD-9697-446C54896230}
+		{409E95DF-1868-46EA-A3FD-DE364E43C05D} = {797B1245-0E74-435F-AEC6-3EBA753E734E}
+		{3FEE8A31-4E37-4DE3-8262-33589A8A4154} = {6463F1BF-66E1-48FC-BDC1-30AB0BE86A5C}
+		{11AB9806-9AB8-4DB4-A449-97430F026402} = {FAFD6D21-D81A-4343-A23C-E58F0949C768}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CD30ECA-CFD2-499C-909C-623F4BE55DF8}
