@@ -23,8 +23,12 @@
 );
 
 
+
+
 GO
 CREATE UNIQUE NONCLUSTERED INDEX [NonClusteredIndex-20200130-180829]
-    ON [dbo].[Posts]([AcceptedAnswerId] ASC, [Id] ASC)
+    ON [dbo].[Posts]([PostTypeId] ASC, [AcceptedAnswerId] ASC, [Id] ASC)
     INCLUDE([AnswerCount], [CreationDate], [LastActivityDate], [Score]);
+
+
 

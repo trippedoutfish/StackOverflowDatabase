@@ -59,6 +59,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Storage\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\VoteTypes.sql" />
@@ -74,5 +75,9 @@
     <Build Include="dbo\Tables\Comments.sql" />
     <Build Include="dbo\Tables\Badges.sql" />
     <Build Include="dbo\Stored Procedures\DropIndexes.sql" />
+    <Build Include="Storage\PostsFullText.sql" />
+    <Build Include="FullTextIndexes.sql" />
+    <Build Include="Storage\FULLTEXT.sql" />
+    <Build Include="dbo\Stored Procedures\usp_TopFtsQuery.sql" />
   </ItemGroup>
 </Project>
